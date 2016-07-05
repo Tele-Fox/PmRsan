@@ -57,7 +57,7 @@ local function do_keyboard_channel()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Join ! �', url = 'https://telegram.me/sudo_tm'},
+    		{text = 'Join ! �', url = 'https://telegram.me/Fox_Team},
 	    },
 	{
 	        		{text = 'Join ! 🇬🇧', url = 'https://telegram.me/Fox_Team'},
