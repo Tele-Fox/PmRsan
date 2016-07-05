@@ -6,7 +6,7 @@ local function do_keyboard_robot()
     					},
     					{
     		    		{text = 'Buy Group 💸', callback_data = '!buygroup'},
-    		    		{text = 'Support 👥', url = 'https://telegram.me/joinchat/B882eT8UBJuv6gfyMbv5pw'},
+    		    		{text = 'Support 👥', url = 'https://telegram.me/B2RzeT58MtdbV_CB0ra8zQ'},
 	    },
 	    {
 	    {text = '🔙', callback_data = '!home'}
@@ -18,8 +18,8 @@ local function do_keyboard_buygroup()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
-    		    		{text = 'Iranians', url = 'http://salam.im/buy/ecgvlup3ld'},
-    		    		{text = 'Other countries', url = 'https://telegram.me/joinchat/B882eT8UBJuv6gfyMbv5pw'},
+    		    		{text = 'Iranians', url = 'https://telegram.me/joinchat/B2RzeT58MtdbV_CB0ra8zQ'},
+    		    		{text = 'Other countries', url = 'https://telegram.me/joinchat/B2RzeT58MtdbV_CB0ra8zQ'},
 	    },
 	    {
 	    {text = '🔙', callback_data = '!robot'}
@@ -31,7 +31,7 @@ local function do_keyboard_private()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '🌐 Site', url = 'http:/sudoteamt.ir'},
+    		{text = '🌐 Site', url = 'https://FoxHosting.xyz'},
     		{text = '📡 Channels', callback_data = '!channel'},
 	    },
 		{
@@ -60,13 +60,13 @@ local function do_keyboard_channel()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Join ! �', url = 'https://telegram.me/sudo_tm'},
+    		{text = 'Join ! �', url = 'https://telegram.me/Fox_Team},
 	    },
 	{
-	        		{text = 'Join ! 🇬🇧', url = 'https://telegram.me/sudo_tm'},
+	        		{text = 'Join ! 🇬🇧', url = 'https://telegram.me/Fox_Team'},
     },
 		{
-					{text = 'Join 🗣', url = 'https://telegram.me/Sudo_Tm'},
+					{text = 'Join 🗣', url = 'https://telegram.me/Fox_Team'},
 		},
 		{
 	    {text = '🔙', callback_data = '!home'},
@@ -80,7 +80,7 @@ local action = function(msg, blocks, ln)
         db:hset('bot:users', msg.from.id, 'xx')
         db:hincrby('bot:general', 'users', 1)
         if msg.chat.type == 'private' then
-            local message = [[📍 *Welcome Sudo Tm Official Bot*  📍
+            local message = [[📍 *Welcome FoxTeam Official Bot*  📍
 -------------------------------------------------------------
 🗣 `Please select an option ...`]]
             local keyboard = do_keyboard_private()
@@ -101,7 +101,7 @@ local action = function(msg, blocks, ln)
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'robot' then
-            local text = [[🔸*BeatBotTG*🔹
+            local text = [[🔸*MeGaFoX*🔹
 🚩 _An advanced robot for entertainment group manager and anti-spam_]]
             local keyboard = do_keyboard_robot()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
@@ -113,21 +113,21 @@ _We will be call to you_]]
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'home' then
-            local text = [[📍 *Welcome Sudo Tm Official Bot*  📍
+            local text = [[📍 *Welcome FoxTeam Official Bot*  📍
 -------------------------------------------------------------
 🗣 `Please select an option ...`]]
             local keyboard = do_keyboard_private()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
         if query == 'share' then
-     api.sendContact(msg.from.id, '+6288972821479', 'Sudo Bot $')
+     api.sendContact(msg.from.id, '+989038710334', 'EhsanFox $')
 end
     end
 end
 return {
 	action = action,
 	triggers = {
-	    '^/(starts)@BeatBotTeamBot$',
+	    '^/(starts)@FoxTeamRoBot$',
 	    '^/(starts)$',
 	    '^/(help)$',
 	    '^###cb:!(home)',
