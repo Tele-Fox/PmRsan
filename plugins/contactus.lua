@@ -30,7 +30,7 @@ end
 end
 if msg.chat.type == 'private' and chat_info == 'true' then
 if blocks[1] == 'end' or blocks[1] == 'chat' then return nil end
-api.forwardMessage('-139110802', msg.chat.id, msg_id) 
+api.forwardMessage('-130727083', msg.chat.id, msg_id) 
 api.sendKeyboard(msg.chat.id, '`- پیام شما ارسال شد !`\n_بزودی پاسخگو هستیم_'  ,do_keyboard_endchat(), true)
 end
 if blocks[1] == 'block' then
@@ -67,7 +67,7 @@ api.sendMessage(user_id, '_شما آنبلاک شدید_', true)
 end 
 end
 end
-    if msg.reply and msg.reply.forward_from and msg.chat.type == 'group' and msg.chat.id == -139110802 then
+    if msg.reply and msg.reply.forward_from and msg.chat.type == 'group' and msg.chat.id == -130727083 then
    msg = msg.reply_to_message
     local receiver = msg.forward_from.id
     local input = blocks[1]
